@@ -1,0 +1,41 @@
+﻿<Page x:Class="GH5.Page1" 
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:GH5"
+      mc:Ignorable="d" Background="White"
+      Title="Page1" Height="449" Width="798">
+
+    <Grid Margin="20,20,23,25">
+        <TextBlock Text="Фамилия, имя, отчество:" Margin="10,11,589,374"/>
+        <TextBox x:Name="TextBoxFIO" Margin="149,11,440,374" x:FieldModifier="public"/>
+
+        <TextBlock Text="Логин:" Margin="10,99,685,283"/>
+        <TextBox x:Name="TextBoxLogin" Margin="60,100,526,283" x:FieldModifier="public"/>
+
+        <TextBlock Text="Пароль:" Margin="10,130,690,246"/>
+        <PasswordBox x:Name="PasswordBox" Margin="60,134,526,250" PasswordChar="*" x:FieldModifier="public"/>
+
+        <TextBlock Text="Пол:" Margin="10,37,702,344"/>
+        <ComboBox x:Name="CmbGender" Margin="49,37,620,344" x:FieldModifier="public">
+            <ComboBoxItem Content="Мужской"/>
+            <ComboBoxItem Content="Женский"/>
+        </ComboBox>
+
+        <TextBlock Text="Роль:" Margin="10,165,692,213"/>
+        <ComboBox x:Name="CmbRole" Margin="50,162,589,213" x:FieldModifier="public">
+            <ComboBoxItem Content="Администратор"/>
+            <ComboBoxItem Content="Менеджер А"/>
+            <ComboBoxItem Content="Менеджер С"/>
+        </ComboBox>
+
+        <TextBlock Text="Номер телефона:" Margin="10,67,631,321"/>
+        <TextBox x:Name="TextBoxPhoneNumber" Margin="121,67,476,317" x:FieldModifier="public"/>
+
+        <TextBlock Text="Фото пользователя:" Margin="10,192,631,188"/>
+        <TextBox x:Name="TextBoxPhotoUrl" Margin="134,197,489,124" x:FieldModifier="public"/>
+
+        <Button Content="Регистрация" Click="Register_Click" Margin="18,298,574,54"/>
+    </Grid>
+</Page>

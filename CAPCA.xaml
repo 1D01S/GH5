@@ -1,0 +1,27 @@
+﻿<Page x:Class="GH5.CAPCA"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:local="clr-namespace:GH5"
+      mc:Ignorable="d"
+      Title="CAPCA" Height="188" Width="420" Background="White">
+    <Grid Margin="0,0,0,14">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" MinHeight="35.96"/>
+            <RowDefinition Height="Auto" MinHeight="39.96"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="1" Text="Введите капчу:" Margin="10,0,10,4"/>
+        <TextBox x:Name="txtGeneratedCaptcha" IsReadOnly="True" Margin="107,9,107,9" />
+
+        <TextBox x:Name="txtEnteredCaptcha" Margin="107,0,107,2" Grid.Row="1" />
+
+        <Image Grid.Row="1" x:Name="imgCaptcha" Margin="10" />
+
+        <Button Grid.Row="3" Content="Подтвердить" Margin="67,10,67,10" Click="Confirm_Click" />
+        
+    </Grid>
+</Page>
